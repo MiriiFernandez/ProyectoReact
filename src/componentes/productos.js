@@ -1,12 +1,14 @@
-import React, {componentes} from "react"
+import React, {Component} from 'react'
 
-class Producto extends componentes {
+class Producto extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            Image : props.imagen,
-            descripcion : props.descripcion
+            imagen : props.imagen,
+            descripcion : props.descripcion,
+            boton : props.boton,
+            numero : props.numero
         };
     }
 
