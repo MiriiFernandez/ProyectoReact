@@ -12,13 +12,26 @@ class Producto extends Component {
         };
     }
 
+    
     render() {
-        return <div>
+       let imagenGaleria=[
+        {src:'../imagenes/img1.jpg', title:'primer perrito'},
+        {src:'../imagenes/img1.jpg', title:'segundo perrito'},
+        {src:'../imagenes/img1.jpg', title:'tercer perrito'},
+        {src:'../imagenes/img1.jpg', title:'quarto perrito'}
+       ];
+       return(
+            <>
             <div>
-                <img src={this.state.imagen}/>
-                <p>{this.state.descripcion}</p>
+                {
+                    imagenGaleria.map((index) => <img src={index.title}
+                    alt="images" height="250" width="250" style={{border:"solid", backgroundColor:'gray'}}/>)
+                }
             </div>
-        </div>
+
+            
+            </>
+       )
     }
 }
 

@@ -3,6 +3,7 @@ import './App.css';
 import Producto from './componentes/productos';
 import'./componentes/estilos.css';
 
+
 function NumAleatorio(max,min){
   var num = Math.floor((Math.random() * 3) + 1); 
   document.write(num);
